@@ -6,7 +6,6 @@ raises an alert.
 
 University project work (Python, deep learning and computer vision course). Slides, in Italian:
 [`slides/presentazione_design_origin_v2.pdf`](slides/presentazione_design_origin_v2.pdf).
-The Docker network simulation mentioned in the slides is not included in this repository.
 
 ## Why a second stage
 
