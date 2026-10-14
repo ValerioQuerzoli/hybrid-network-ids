@@ -43,7 +43,7 @@ Zero-day, one family left out of XGBoost training, threshold at the 99th percent
 | Infiltration | 7 | 0.0% | 42.9% |
 | Heartbleed | 1 | 0.0% | 100% |
 
-Cost: 3,944 extra false alarms out of 394,934 Benign test flows (1.0%). "Extra" counts only those added by the autoencoder; the pipeline's total false alarms also include XGBoost's (e.g. 5,176 in the normal scenario). At the 99.9th percentile the DoS
+Cost: 3,944 extra false alarms out of 394,934 Benign test flows (1.0%). "Extra" counts only those added by the autoencoder; the pipeline's total false alarms also include XGBoost's (3,988 in total in this DoS zero-day scenario). At the 99.9th percentile the DoS
 recall is 47.4% with 393 extra false alarms.
 
 Retraining the autoencoders with 5 different seeds (thresholds always from validation): DoS zero-day recall
