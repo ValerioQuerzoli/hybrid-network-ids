@@ -69,10 +69,10 @@ excludes feature extraction and the CPU→GPU copy; it only shows the autoencode
   construction, and on encrypted traffic no network-level fix exists.
 - **In-domain numbers are optimistic.** Random split: flows of the same attack session end up in both train
   and test.
-- **No transfer across networks.** Models trained on CIC-IDS2017 fail on CSE-CIC-IDS2018 and CIC-DDoS2019
-  (XGBoost ~0% recall; the 2017 autoencoder flags 37% of 2018 normal traffic). Normal traffic differs between
-  networks, so the autoencoder needs a baseline trained on the network where it runs. These experiments are in
-  section 9 of the notebook, switched off by default (`ESEGUI_CROSS_DATASET = False`).
+- **Transfer across networks not tested here.** The models are trained and tested on CIC-IDS2017 only. Normal
+  traffic differs between networks, so the autoencoder would need a baseline trained on the network where it
+  runs. Section 9 of the notebook contains cross-dataset experiments (CSE-CIC-IDS2018, CIC-DDoS2019), switched
+  off by default (`ESEGUI_CROSS_DATASET = False`) and without saved outputs.
 - **An alert is not a classification.** The autoencoder flags deviations from learned normal traffic; part of
   the false alarms is likely legitimate but unusual traffic.
 
